@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Expo - Explore Your Future</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/finals.png">
+                
+            </div>
+            <button class="mobile-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li class="dropdown">
+                    <a href="hellotocource.HTML" aria-label="Discover Pathways">Discover Pathways</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-title">Explore Career Domains</div>
+                        <div class="nested-dropdown">
+                            <a href="#" aria-label="IT Domains">IT Domains</a>
+                            <div class="nested-dropdown-content">
+                                <a href="#" aria-label="Data Science">Data Science</a>
+                                <a href="#" aria-label="Generative AI">Generative AI</a>
+                                <a href="#" aria-label="Full Stack Cloud Computing">Full Stack Cloud Computing</a>
+                                <a href="#" aria-label="Web Development">Web Development</a>
+                                <a href="#" aria-label="App Development">App Development</a>
+                                <a href="#" aria-label="Cybersecurity">Cybersecurity</a>
+                                <a href="#" aria-label="DevOps Engineering">DevOps Engineering</a>
+                            </div>
+                        </div>
+                        <div class="nested-dropdown">
+                            <a href="#" aria-label="Core Domains">Core Domains</a>
+                            <div class="nested-dropdown-content">
+                                <a href="#" aria-label="IoT">IoT</a>
+                                <a href="#" aria-label="Robotics">Robotics</a>
+                                <a href="#" aria-label="Mechanical Engineering">Mechanical Engineering</a>
+                                <a href="#" aria-label="Electrical Engineering">Electrical Engineering</a>
+                                <a href="#" aria-label="Civil Engineering">Civil Engineering</a>
+                            </div>
+                        </div>
+                        <div class="nested-dropdown">
+                            <a href="#" aria-label="Government">Government</a>
+                            <div class="nested-dropdown-content">
+                                <a href="#" aria-label="Central Government">Central Government</a>
+                                <a href="#" aria-label="State Government">State Government</a>
+                                <a href="#" aria-label="PSU Jobs">PSU Jobs</a>
+                                <a href="#" aria-label="Defense Services">Defense Services</a>
+                            </div>
+                        </div>
+                        <a href="#" aria-label="Business & Management">Business & Management</a>
+                        <a href="#" aria-label="Creative Fields">Creative Fields</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="community.html" aria-label="Connect & Share">Connect & Share</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-title">Community Resources</div>
+                        <a href="#" aria-label="Talk to Professionals">Talk to Professionals</a>
+                        <a href="#" aria-label="Talk to Seniors">Talk to Seniors</a>
+                        <a href="#" aria-label="Talk to Industry Experts">Talk to Industry Experts</a>
+                        <a href="#" aria-label="Book a Session">Book a Session</a>
+                        <a href="#" aria-label="Student Forums">Student Forums</a>
+                    </div>
+                </li>
+                <li><a href="Future.html" aria-label="Future Insights">Speak with your Future</a></li>
+                <li><a href="about.html" aria-label="About">About</a></li>
+                <div class="mobile-auth">
+                    <a href="#" class="auth-btn login-btn" aria-label="Log In">Log In</a>
+                    <a href="#" class="auth-btn signup-btn" aria-label="Join Now">Join Now</a>
+                </div>
+            </ul>
+            <div class="auth-buttons desktop-auth">
+                <a href="#" class="auth-btn login-btn" id="loginButton" aria-label="Log In">Log In</a>
+                <a href="#" class="auth-btn signup-btn" aria-label="Join Now">Join Now</a>
+            </div>
+            <!-- Login/Registration Popup -->
+  <div class="popup-wrapper">
+    <span class="popup-close-btn"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="popup-login-page active">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="popup-input-box">
+          <span class="popup-icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="popup-input-box">
+          <span class="popup-icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="popup-remember">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forget password?</a>
+        </div>
+        <button type="submit" class="popup-submit-btn">Login</button>
+        <div class="popup-register">
+          <p>Don't have an account? <a class="popup-register-link" href="#">Register here</a></p>
+        </div>
+      </form>
+    </div>
+  
+    <div class="popup-registeration-page">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="popup-input-box">
+          <span class="popup-icon"><ion-icon name="person-outline"></ion-icon></span>
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="popup-input-box">
+          <span class="popup-icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="popup-input-box">
+          <span class="popup-icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="popup-remember">
+          <label><input type="checkbox"> I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="popup-submit-btn">Register</button>
+        <div class="popup-login">
+          <p>Already have an account? <a class="popup-login-link" href="#">Login here</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+        </nav>
+    </header>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    
+    <script type="text/javascript">window.DocsBotAI=window.DocsBotAI||{},DocsBotAI.init=function(e){return new Promise((t,r)=>{var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://widget.docsbot.ai/chat.js";let o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o),n.addEventListener("load",()=>{let n;Promise.all([new Promise((t,r)=>{window.DocsBotAI.mount(Object.assign({}, e)).then(t).catch(r)}),(n=function e(t){return new Promise(e=>{if(document.querySelector(t))return e(document.querySelector(t));let r=new MutationObserver(n=>{if(document.querySelector(t))return e(document.querySelector(t)),r.disconnect()});r.observe(document.body,{childList:!0,subtree:!0})})})("#docsbotai-root"),]).then(()=>t()).catch(r)}),n.addEventListener("error",e=>{r(e.message)})})};</script>
+    <script type="text/javascript">
+      DocsBotAI.init({id: "nO6Lj9esWfITXa6KTTlE/C5MvVoztINYGkI2I8IwY"});
+    </script>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="headline">Explore Your Future.<br>Unlock Your Potential.</h1>
+            <p class="subheading">Empower your career with AI-driven insights and community support. Discover, connect, and thrive with personalized guidance.</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn primary-btn" aria-label="Get Started for Free">Get Started for Free</a>
+                <a href="#" class="cta-btn secondary-btn" aria-label="Learn More">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features">
+      <div class="feature-item">
+          <div class="feature-icon">🔎</div>
+          <h3 class="feature-title">DISCOVER</h3>
+          <p>Explore career paths tailored to your unique skills</p>
+      </div>
+      <div class="feature-item">
+          <div class="feature-icon">🛣️</div>
+          <div class="feature-title">ROADMAP</div>
+          <p>Create your personalized career roadmap</p>
+      </div>
+      <div class="feature-item">
+          <div class="feature-icon">👥</div>
+          <div class="feature-title">COLLABORATE</div>
+          <p>Connect with experts in your desired field</p>
+      </div>
+      <div class="feature-item">
+          <div class="feature-icon">👨‍💻</div>
+          <div class="feature-title">MY FUTURE</div>
+          <p>Talk with your future to get motivated</p>
+      </div>
+  </section>
+
+    <!-- Self-Evaluation Section -->
+    <section class="self-evaluation" id="evaluation">
+        <h2 class="section-title">Evaluate Yourself</h2>
+        <div class="evaluation-cards">
+            <div class="evaluation-card">
+                <h3>Psychometric Test</h3>
+                <p>Discover your strengths and weaknesses with our advanced psychometric tests.</p>
+                <a href="#" class="card-link">Take the test</a>
+            </div>
+            <div class="evaluation-card">
+                <h3>Situational Analysis</h3>
+                <p>Learn how you would handle real-world scenarios and improve your decision-making skills.</p>
+                <a href="#" class="card-link">Start analysis</a>
+            </div>
+            <div class="evaluation-card">
+                <h3>Logical Thinking</h3>
+                <p>Test your logical reasoning and aptitude with our challenging exercises.</p>
+                <a href="#" class="card-link">Begin challenges</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Exploration Section -->
+    <section class="domain-exploration" id="domains">
+        <h2 class="section-title">Explore Top Domains</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev-button" aria-label="Previous slide">
+                <i class="arrow left"></i>
+            </button>
+                  <div class="poster-carousel">
+                      <div class="poster-track">
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/Data science image.png" alt="Data Science & Analytics" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Data Science & Analytics</h3>
+                                      <p>Transform data into actionable insights</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/Generative AI.png" alt="Generative AI" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Generative AI</h3>
+                                      <p>Shape the future of intelligent systems</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/cloud.png" alt="Cloud Computing" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Cloud Computing</h3>
+                                      <p>Build scalable infrastructure for tomorrow</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/Cyber Security.png" alt="Cybersecurity" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Cybersecurity</h3>
+                                      <p>Protect digital assets in an evolving landscape</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/Dark Purple Neon Illustration Artificial Intelligence Presentation.png" alt="Robotics & Automation" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Robotics & Automation</h3>
+                                      <p>Engineer the next generation of smart machines</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/product management.png" alt="Product Management" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Product Management</h3>
+                                      <p>Bridge technology and business strategy</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/digital marketing.png" alt="Digital Marketing" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Digital Marketing</h3>
+                                      <p>Create compelling digital experiences</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="poster">
+                              <div class="poster-content">
+                                  <img src="images/Blue and White Illustrated Medical Healthcare Simple Modern Presentation (1).png" alt="Healthcare Informatics" class="poster-image">
+                                  <div class="poster-info">
+                                      <h3>Healthcare Informatics</h3>
+                                      <p>Transform patient care with technology</p>
+                                      <a href="#" class="poster-btn">Explore</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <button class="carousel-button next-button">
+                      <i class="arrow right"></i>
+                  </button>
+              </div>
+          </section>
+       
+
+    <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-section">
+    <h2>CareerExpo</h2>
+    <div class="footer-columns">
+      <!-- IT Domains -->
+      <div class="footer-column">
+        <h3>IT Domains</h3>
+        <ul>
+          <li><a href="#">Data Science & Analytics</a></li>
+          <li><a href="#">Generative AI</a></li>
+          <li><a href="#">Cloud Computing</a></li>
+          <li><a href="#">Cybersecurity</a></li>
+          <li><a href="#">Full Stack Development</a></li>
+          <li><a href="#">DevOps Engineering</a></li>
+        </ul>
+      </div>
+      <!-- Core Domains -->
+      <div class="footer-column">
+        <h3>Core Domains</h3>
+        <ul>
+          <li><a href="#">Mechanical Engineering</a></li>
+          <li><a href="#">Electrical Engineering</a></li>
+          <li><a href="#">Civil Engineering</a></li>
+          <li><a href="#">Robotics & Automation</a></li>
+          <li><a href="#">IoT (Internet of Things)</a></li>
+          <li><a href="#">Embedded Systems</a></li>
+        </ul>
+      </div>
+      <!-- Medical Domains -->
+      <div class="footer-column">
+        <h3>Medical Domains</h3>
+        <ul>
+          <li><a href="#">Healthcare Informatics</a></li>
+          <li><a href="#">Biomedical Engineering</a></li>
+          <li><a href="#">Clinical Research</a></li>
+          <li><a href="#">Medical Imaging</a></li>
+          <li><a href="#">Pharmaceutical Sciences</a></li>
+          <li><a href="#">Public Health</a></li>
+        </ul>
+      </div>
+      <!-- Government Jobs -->
+      <div class="footer-column">
+        <h3>Government Jobs</h3>
+        <ul>
+          <li><a href="#">Civil Services</a></li>
+          <li><a href="#">Defense Services</a></li>
+          <li><a href="#">Public Sector Undertakings (PSUs)</a></li>
+          <li><a href="#">State Government Jobs</a></li>
+          <li><a href="#">Banking & Finance</a></li>
+          <li><a href="#">Railway Jobs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Career Expo. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

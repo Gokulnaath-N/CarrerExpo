@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak to Your Future | CareerExpo</title>
+    <link rel="stylesheet" href="Future.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles-container" id="particles-js"></div>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/finals.png">
+        </div>
+    
+        <!-- Navbar links -->
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Speak to Your Future</span></h1>
+            <p class="subtitle">Visualize your career path after 12th standard and stay motivated</p>
+        </section>
+
+        <section class="container">
+            <div class="form-container">
+                <h2>Enter Your Details</h2>
+                <form id="future-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g., John Smith" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="domain">Preferred Domain</label>
+                        <select id="domain" required>
+                            <option value="" disabled selected>Select your domain</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                            <option value="Business Management">Business Management</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="Law">Law</option>
+                            <option value="Architecture">Architecture</option>
+                            <option value="Design">Design</option>
+                            <option value="Education">Education</option>
+                            <option value="Psychology">Psychology</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest (Select up to 3)</label>
+                        <div class="checkbox-container">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-1" name="interests" value="Problem Solving">
+                                <label for="interest-1">Problem Solving</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-2" name="interests" value="Creativity">
+                                <label for="interest-2">Creativity</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-3" name="interests" value="Research">
+                                <label for="interest-3">Research</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-4" name="interests" value="Communication">
+                                <label for="interest-4">Communication</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-5" name="interests" value="Leadership">
+                                <label for="interest-5">Leadership</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-6" name="interests" value="Analysis">
+                                <label for="interest-6">Analysis</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-7" name="interests" value="Design Thinking">
+                                <label for="interest-7">Design Thinking</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-8" name="interests" value="Technical Skills">
+                                <label for="interest-8">Technical Skills</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="interest-9" name="interests" value="Innovation">
+                                <label for="interest-9">Innovation</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="passionate">What are you most passionate about?</label>
+                        <textarea id="passionate" placeholder="Tell us what drives you..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Generate My Future Self</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="result-container" id="result-container">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="avatar-image" id="avatar-image"></div>
+                    </div>
+                    <div class="time-indicator">
+                        <span>Future You</span>
+                        <span class="year">2030</span>
+                    </div>
+                </div>
+
+                <div class="future-profile">
+                    <h2>Meet Your Future Self</h2>
+                    <div class="profile-content" id="profile-content">
+                        <p class="notice">Fill in your details and click "Generate My Future Self" to see your AI-generated future career profile.</p>
+                    </div>
+                </div>
+
+                <div class="career-timeline" id="career-timeline">
+                    <!-- Timeline will be populated by JavaScript -->
+                </div>
+
+                <div class="actions">
+                    <button id="save-btn" class="action-btn" disabled>
+                        <i class="fas fa-download"></i>
+                        <span>Save Profile</span>
+                    </button>
+                    <button id="share-btn" class="action-btn" disabled>
+                        <i class="fas fa-share-alt"></i>
+                        <span>Share</span>
+                    </button>
+                    <button id="regenerate-btn" class="action-btn" disabled>
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Regenerate</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Student Success Stories</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>Seeing my future self in the IT industry helped me stay focused during difficult study periods. Now I'm working at my dream company!</p>
+                    <div class="testimonial-author">
+                        <span class="name">Darshan A R</span>
+                        <span class="role">Cloud Developer at Google</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>The career visualization was surprisingly accurate! It predicted my path into data science and the specific skills I'd need. It was like a roadmap to success.</p>
+                    <div class="testimonial-author">
+                        <span class="name">Gokulnaath N</span>
+                        <span class="role">Data Scientist at Microsoft</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>Speaking to my future self motivated me to take additional courses that weren't part of my curriculum. These extra skills gave me an edge in the job market.</p>
+                    <div class="testimonial-author">
+                        <span class="name">Varunkumar S N</span>
+                        <span class="role">Game developer at Rockstar Games</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-section">
+    <h2>CareerExpo</h2>
+    <div class="footer-columns">
+      <!-- IT Domains -->
+      <div class="footer-column">
+        <h3>IT Domains</h3>
+        <ul>
+          <li><a href="#">Data Science & Analytics</a></li>
+          <li><a href="#">Generative AI</a></li>
+          <li><a href="#">Cloud Computing</a></li>
+          <li><a href="#">Cybersecurity</a></li>
+          <li><a href="#">Full Stack Development</a></li>
+          <li><a href="#">DevOps Engineering</a></li>
+        </ul>
+      </div>
+      <!-- Core Domains -->
+      <div class="footer-column">
+        <h3>Core Domains</h3>
+        <ul>
+          <li><a href="#">Mechanical Engineering</a></li>
+          <li><a href="#">Electrical Engineering</a></li>
+          <li><a href="#">Civil Engineering</a></li>
+          <li><a href="#">Robotics & Automation</a></li>
+          <li><a href="#">IoT (Internet of Things)</a></li>
+          <li><a href="#">Embedded Systems</a></li>
+        </ul>
+      </div>
+      <!-- Medical Domains -->
+      <div class="footer-column">
+        <h3>Medical Domains</h3>
+        <ul>
+          <li><a href="#">Healthcare Informatics</a></li>
+          <li><a href="#">Biomedical Engineering</a></li>
+          <li><a href="#">Clinical Research</a></li>
+          <li><a href="#">Medical Imaging</a></li>
+          <li><a href="#">Pharmaceutical Sciences</a></li>
+          <li><a href="#">Public Health</a></li>
+        </ul>
+      </div>
+      <!-- Government Jobs -->
+      <div class="footer-column">
+        <h3>Government Jobs</h3>
+        <ul>
+          <li><a href="#">Civil Services</a></li>
+          <li><a href="#">Defense Services</a></li>
+          <li><a href="#">Public Sector Undertakings (PSUs)</a></li>
+          <li><a href="#">State Government Jobs</a></li>
+          <li><a href="#">Banking & Finance</a></li>
+          <li><a href="#">Railway Jobs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Career Expo. All rights reserved.</p>
+  </div>
+</footer>
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
